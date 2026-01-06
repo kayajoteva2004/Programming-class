@@ -1,17 +1,17 @@
 import random
 
 print("I want to play rock_paper_scissors!")
-print("Select 0 for rock, 1 for paper and 2 for scissors")
+print("Select 0 for rock, 1 for paper and 2 for scissors.")
 
 # Emojis
-choices = ["✂️", "📃", "🪨"]
+game_board = ["✂️", "📃", "🪨"]
 
 your_choice = int(input("Your choice: "))
-print("Your chose:", choices[your_choice])
+print("Your choice:", game_board[your_choice])
 
 computer_choice = random.randint(0, 2)
 print("Computer chose:", computer_choice)
-print(choices[computer_choice])
+print(game_board[computer_choice])
 
 if your_choice == computer_choice:
     print("It's a draw!")
